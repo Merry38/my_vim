@@ -29,6 +29,8 @@ nnoremap <right> <nop>
 
 " Command to clear search
 command C let @/=""
+" Command to save as su
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " shortcuts for S&R
 noremap ;; :s:::<Left><Left>
 " PHP folding level
