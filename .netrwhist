@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New'
+let g:netrw_dirhist_2='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New/htdocs'
+let g:netrw_dirhist_3='/Users/mauzuc90/Library/Application Support/Mozilla/chrome'
+let g:netrw_dirhist_4='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New'
+let g:netrw_dirhist_5='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New/img'
+let g:netrw_dirhist_6='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New'
+let g:netrw_dirhist_7='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New/php'
+let g:netrw_dirhist_8='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New'
+let g:netrw_dirhist_9='/Users/mauzuc90/Sites/Elaborato Programmazione Web/New/php'
