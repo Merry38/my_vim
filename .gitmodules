@@ -19,3 +19,6 @@
 [submodule "bundle/DoxygenToolkit"]
 	path = bundle/DoxygenToolkit
 	url = git://github.com/vim-scripts/DoxygenToolkit.vim.git
+[submodule "bundle/DoxyGen-Syntax"]
+	path = bundle/DoxyGen-Syntax
+	url = https://github.com/vim-scripts/DoxyGen-Syntax.git
