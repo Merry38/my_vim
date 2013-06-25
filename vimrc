@@ -37,5 +37,5 @@ noremap ;; :s:::<Left><Left>
 let g:php_folding = 2
 " Command-T (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
-" DoxyGen Syntax coloring for C++
-set syntax=cpp.doxygen
+" Doxygen enable
+let g:load_doxygen_syntax=1
