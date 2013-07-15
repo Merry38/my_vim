@@ -10,8 +10,9 @@ set ruler
 set number
 set cursorline
 set cursorcolumn
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set autoindent
 set cindent
 set colorcolumn=80
@@ -30,12 +31,12 @@ nnoremap <right> <nop>
 " Command to clear search
 command C let @/=""
 " Command to save as su
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command W :execute ':silent w !sudo tee %' | :edit!
 " shortcuts for S&R
 noremap ;; :s:::<Left><Left>
 " PHP folding level
 let g:php_folding = 2
-" Command-T (show function and classes)
+" tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
 " Doxygen enable
 let g:load_doxygen_syntax=1
@@ -43,6 +44,11 @@ let g:load_doxygen_syntax=1
 "" Syntastic config
 nmap <leader>s :SyntasticCheck<CR>
 nmap <leader>e :call ErrorsToggle()<cr>
+
+let g:syntastic_c_compiler = 'clang'
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_check_header = 1
+"let g:syntastic_cpp_auto_refresh_includes = 1
 
 let g:errors_is_open = 0
 
@@ -58,3 +64,5 @@ function! ErrorsToggle()
     endif
 endfunction
 
+" C++11 syntax
+let c_no_curly_error=1
