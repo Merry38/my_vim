@@ -33,13 +33,19 @@ command C let @/=""
 " Command to save as su
 command W :execute ':silent w !sudo tee %' | :edit!
 " shortcuts for S&R
-noremap ;; :s:::<Left><Left>
-" PHP folding level
-let g:php_folding = 2
+noremap ;; :s///<Left><Left>
+noremap ;: :%s///g<Left><Left>
 " tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
-" Doxygen enable
+
+" PHP folding level
+let g:php_folding = 2
+" C++11 syntax
+let c_no_curly_error=1
+
+" Doxygen
 let g:load_doxygen_syntax=1
+let g:DoxygenToolkit_authorName="Maurizio Zucchelli"
 
 "" Syntastic config
 nmap <leader>s :SyntasticCheck<CR>
@@ -64,5 +70,3 @@ function! ErrorsToggle()
     endif
 endfunction
 
-" C++11 syntax
-let c_no_curly_error=1
