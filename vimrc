@@ -34,7 +34,7 @@ command C let @/=""
 command W :execute ':silent w !sudo tee %' | :edit!
 " shortcuts for S&R
 noremap ;; :s///<Left><Left>
-noremap ;: :%s///g<Left><Left>
+noremap ;: :%s///g<Left><Left><Left>
 " tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
 
