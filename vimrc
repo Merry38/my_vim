@@ -11,8 +11,9 @@ set number
 set cursorline
 set cursorcolumn
 set shiftwidth=2
-set tabstop=2
+set tabstop=4
 set softtabstop=2
+set expandtab
 set autoindent
 set cindent
 set colorcolumn=80
