@@ -16,7 +16,6 @@ set softtabstop=2
 set expandtab
 set autoindent
 set cindent
-set colorcolumn=80
 set foldmethod=syntax
 set hlsearch
 set incsearch 
@@ -30,12 +29,15 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 
 " Command to clear search
+
 command C let @/=""
 " Command to save as su
 command W :execute ':silent w !sudo tee %' | :edit!
-" shortcuts for S&R
+
+" Shortcuts for S&R
 noremap ;; :s///<Left><Left>
 noremap ;: :%s///g<Left><Left><Left>
+
 " tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
 
@@ -70,4 +72,9 @@ function! ErrorsToggle()
         let g:errors_is_open = 1
     endif
 endfunction
+
+" Highlight characters after the 80th
+set colorcolumn=80
+highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
+match OverLength /\%>80v.\+/
 
