@@ -1,3 +1,9 @@
+" Colorscheme
+colorscheme solarized
+
+" Workaround for solarized
+highlight! link SignColumn NonText
+
 " Font
 if has("unix")
 	let s:uname = system("echo -n \"$(uname)\"")
