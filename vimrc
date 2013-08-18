@@ -18,7 +18,6 @@ set tabstop=4
 set softtabstop=2
 set expandtab
 set autoindent
-set cindent
 set hlsearch
 set incsearch 
 set foldmethod=syntax
@@ -40,10 +39,6 @@ command W :execute ':silent w !sudo tee %' | :edit!
 noremap ;; :s///<Left><Left>
 noremap ;' :%s///g<Left><Left><Left>
 
-" PHP folding level
-let g:php_folding = 2
-" C++11 syntax
-let c_no_curly_error = 1
 
 """ Plugins
 
@@ -58,19 +53,11 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType")
 
 "" Doxygen
 let g:load_doxygen_syntax = 1
-autocmd BufRead,BufNewFile FileType java set syntax=java.doxygen
-      \ | let g:DoxygenToolkit_briefTag_pre=""
-      \ | let g:DoxygenToolkit_throwTag_pre="@exception "
 let g:DoxygenToolkit_authorName = "Zucchelli Maurizio"
 
-"" Syntastic config
+"" Syntastic
 nmap <leader>s :SyntasticCheck<CR>
 nmap <leader>e :call ErrorsToggle()<CR>
-
-let g:syntastic_c_compiler = "clang"
-let g:syntastic_cpp_compiler = "clang++"
-let g:syntastic_cpp_check_header = 1
-"let g:syntastic_cpp_auto_refresh_includes = 1
 
 let g:errors_is_open = 0
 function! ErrorsToggle()
@@ -84,8 +71,6 @@ function! ErrorsToggle()
     let g:errors_is_open = 1
   endif
 endfunction
-
-let g:syntastic_java_javac_config_file_enabled = 1
 
 "" neocomplcache
 let g:neocomplcache_enable_at_startup = 1
