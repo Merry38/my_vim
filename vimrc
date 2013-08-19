@@ -1,8 +1,8 @@
 """ Setup/cleaning
 
-" Pathogen Plugin manager
+" Pathogen Plug-in Manager
 execute pathogen#infect()
-" Remove ALL autocommands for the current group.
+" Remove ALL auto commands for the current group.
 autocmd!
 
 """ Settings
@@ -40,14 +40,14 @@ noremap ;; :s///<Left><Left>
 noremap ;' :%s///g<Left><Left><Left>
 
 
-""" Plugins
+""" Plug-ins
 
 "" tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
 
 "" NERDtree (show files)
 nmap <leader>n :NERDTreeToggle<CR>
-" Autoclose if NERDtree is the only window left open
+" Auto close if NERDtree is the only window left open
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType")
       \ && b:NERDTreeType == "primary") | q | endif
 
@@ -90,7 +90,8 @@ colorscheme molokai
 
 " Highlight characters after the 80th
 set colorcolumn=80
-autocmd BufRead,BufNewFile *  " autocmd because gets overwritten by colorscheme
+" (auto command because gets overwritten by colorscheme changes)
+autocmd BufRead,BufNewFile *
       \ highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
       \ | match OverLength /\%>80v.\+/
 

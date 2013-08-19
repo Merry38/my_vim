@@ -14,6 +14,7 @@ if has("unix")
 	endif
 endif
 
-" Transparency
+" Settings
 set transparency=2
+set spell spelllang=en,it spellfile=.spell.utf-8.add
 
