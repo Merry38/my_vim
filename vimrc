@@ -8,19 +8,22 @@ autocmd!
 """ Settings
 
 set nocompatible
+
 set showcmd
 set ruler
 set number
 set cursorline
 set cursorcolumn
+set hlsearch
+set incsearch 
+
 set shiftwidth=2
 set tabstop=4
 set softtabstop=2
 set expandtab
-set autoindent
-set hlsearch
-set incsearch 
 set foldmethod=syntax
+source ~/.vim/indent.vim
+
 syntax enable
 filetype plugin indent on
 
@@ -31,9 +34,9 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 
 " Command to clear search
-command C let @/ = ""
+command! C let @/ = ""
 " Command to save as su
-command W :execute ':silent w !sudo tee %' | :edit!
+command! W :execute ':silent w !sudo tee %' | :edit!
 
 " Shortcuts for S&R
 noremap ;; :s///<Left><Left>
@@ -78,6 +81,7 @@ let g:neocomplcache_enable_ignore_case = 1
 let g:neocomplcache_enable_smart_case = 1
 let g:neocomplcache_enable_fuzzy_completion = 1
 let g:neocomplcache_fuzzy_completion_start_length = 1
+let g:neocomplcache_enable_auto_select = 1
 
 
 """ Colors

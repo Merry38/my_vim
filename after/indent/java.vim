@@ -1,3 +1,6 @@
+" ...sucks
+source ~/.vim/indent.vim
+
 function! GetJavaIndent_improved()
     let theIndent = GetJavaIndent()
     let lnum = prevnonblank(v:lnum - 1)
@@ -9,3 +12,6 @@ function! GetJavaIndent_improved()
     return theIndent
 endfunction
 setlocal indentexpr=GetJavaIndent_improved()
+
+setlocal cinoptions+=j1
+
