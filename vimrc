@@ -83,6 +83,8 @@ let g:neocomplcache_enable_fuzzy_completion = 1
 let g:neocomplcache_fuzzy_completion_start_length = 1
 let g:neocomplcache_enable_auto_select = 1
 
+"" Syntax
+au BufRead,BufNewFile *.in set filetype=otter
 
 """ Colors
 

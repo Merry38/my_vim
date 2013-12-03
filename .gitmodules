@@ -34,9 +34,6 @@
 [submodule "bundle/vim-objc"]
 	path = bundle/vim-objc
 	url = https://github.com/b4winckler/vim-objc.git
-[submodule "command-t"]
-	path = command-t
-	url = https://github.com/wincent/Command-T
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = https://github.com/wincent/Command-T
