@@ -13,14 +13,14 @@ set showcmd
 set ruler
 set number
 set cursorline
-set cursorcolumn
+" set cursorcolumn
 set hlsearch
 set incsearch 
 
-set shiftwidth=2
+set shiftwidth=4
 set tabstop=4
-set softtabstop=2
-set expandtab
+set softtabstop=4
+" set expandtab
 set foldmethod=syntax
 source ~/.vim/indent.vim
 
@@ -44,6 +44,8 @@ noremap ;' :%s///g<Left><Left><Left>
 
 
 """ Plug-ins
+
+let mapleader="ù"
 
 "" tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
@@ -92,7 +94,7 @@ colorscheme molokai
 "colorscheme solarized      " solarized is set in gvimrc
 
 " Highlight characters after the 80th
-set colorcolumn=80
+" set colorcolumn=80
 " (auto command because gets overwritten by colorscheme changes)
 autocmd BufRead,BufNewFile *
       \ highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
