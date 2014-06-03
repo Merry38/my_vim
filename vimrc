@@ -28,10 +28,11 @@ syntax enable
 filetype plugin indent on
 
 " Disable arrow keys for navigation
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+set mouse=a
 
 " Command to clear search
 command! C let @/ = ""
@@ -58,7 +59,7 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType")
 
 "" Doxygen
 let g:load_doxygen_syntax = 1
-let g:DoxygenToolkit_authorName = "Zucchelli Maurizio"
+let g:DoxygenToolkit_authorName = "Riccardo Orizio"
 
 "" Syntastic
 nmap <leader>s :SyntasticCheck<CR>
@@ -90,13 +91,13 @@ let g:neocomplcache_enable_auto_select = 1
 set background=dark
 "colorscheme elflord
 "colorscheme github
-colorscheme molokai
+"colorscheme molokai
 "colorscheme solarized      " solarized is set in gvimrc
 
 " Highlight characters after the 80th
 " set colorcolumn=80
 " (auto command because gets overwritten by colorscheme changes)
-autocmd BufRead,BufNewFile *
-      \ highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
-      \ | match OverLength /\%>80v.\+/
+" autocmd BufRead,BufNewFile *
+"       \ highlight OverLength ctermbg=darkred ctermfg=white guibg=#592929
+"       \ | match OverLength /\%>80v.\+/
 
