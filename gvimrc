@@ -9,7 +9,8 @@ if has("unix")
   let s:uname = system("echo -n \"$(uname)\"")
   if !v:shell_error && s:uname == "Linux"
     " set guifont=Ubuntu\ Mono\ 14
-	set guifont=Monospace\ 10
+	" set guifont=Monospace\ 10
+	set guifont=Ubuntu\ Mono\ 10
 	set guioptions=-T
 	set guioptions=-r
 	set guioptions=-L

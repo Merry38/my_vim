@@ -90,7 +90,7 @@ let g:neocomplcache_enable_auto_select = 1
 
 set background=dark
 "colorscheme elflord
-"colorscheme github
+colorscheme github
 "colorscheme molokai
 "colorscheme solarized      " solarized is set in gvimrc
 
