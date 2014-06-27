@@ -88,4 +88,4 @@ set background=dark
 colorscheme solarized
 
 """ Font
-set guifont=Monospace\ 10
+set guifont=Monospace\ 9
