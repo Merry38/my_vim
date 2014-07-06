@@ -56,7 +56,6 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType")
 
 "" Doxygen
 let g:load_doxygen_syntax = 1
-let g:DoxygenToolkit_authorName = "Riccardo Orizio"
 
 "" Syntastic
 nmap <leader>s :SyntasticCheck<CR>
@@ -87,5 +86,12 @@ let g:neocomplcache_enable_auto_select = 1
 set background=dark
 colorscheme solarized
 
+""" Backspace
+set backspace=indent,eol,start
+
 """ Font
-set guifont=Monospace\ 9
+if has( 'unix' )
+	set guifont=Monospace\ 9
+else
+	set guifont=Consolas:h10
+endif
