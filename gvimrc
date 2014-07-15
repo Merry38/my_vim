@@ -21,7 +21,12 @@ set tabstop=4
 set softtabstop=4
 " set expandtab
 set foldmethod=syntax
-source ~/.vim/indent.vim
+
+if has( 'unix' )
+	source ~/.vim/indent.vim
+else
+	source ~/vimfiles/indent.vim
+endif
 
 syntax enable
 filetype plugin indent on

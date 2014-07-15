@@ -21,7 +21,12 @@ set tabstop=4
 set softtabstop=4
 " set expandtab
 set foldmethod=syntax
-source ~/.vim/indent.vim
+
+if has( 'unix' )
+	source ~/.vim/indent.vim
+else
+	source ~/vimfiles/indent.vim
+endif
 
 syntax enable
 filetype plugin indent on
@@ -88,4 +93,8 @@ set background=dark
 colorscheme solarized
 
 """ Font
-set guifont=Monospace\ 10
+if has( 'unix' )
+	set guifont=Monospace\ 9
+else
+	set guifont=Consolas:h10
+endif
