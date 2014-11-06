@@ -32,23 +32,31 @@ syntax enable
 filetype plugin indent on
 
 " Disable arrow keys for navigation
-" nnoremap <up> <nop>
-" nnoremap <down> <nop>
-" nnoremap <left> <nop>
-" nnoremap <right> <nop>
+" because vim <3
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
 set mouse=a
 
 " Command to clear search
 command! C let @/ = ""
 " Command to save as su
-command! W :execute ':silent w !sudo tee %' | :edit!
+" command! W :execute ':silent w !sudo tee %' | :edit!
 
 " Shortcuts for S&R
 noremap ;; :s///<Left><Left>
 noremap ;' :%s///g<Left><Left><Left>
 
 """ Plug-ins
-let mapleader="ù"
+let mapleader="]"
+
+"" Eclim
+" Force eclim plugin to execute early for checks
+runtime plugin/eclim.vim
+" Tab switch remap FIXME
+nmap <silent> <c-h> :call :eclim#vimplugin#FeedKeys('Ctrl+PageUp')<cr>
+nmap <silent> <c-l> :call :eclim#vimplugin#FeedKeys('Ctrl+PageDown')<cr>
 
 "" tagbar (show function and classes)
 nmap <leader>l :TagbarToggle<CR> 
@@ -81,12 +89,16 @@ function! ErrorsToggle()
 endfunction
 
 "" neocomplcache
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_ignore_case = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_fuzzy_completion = 1
-let g:neocomplcache_fuzzy_completion_start_length = 1
-let g:neocomplcache_enable_auto_select = 1
+" enable only if eclim is not running (or it will conflict with the eclipse
+" autocomplete)
+if !exists('g:EclimHome')
+	let g:neocomplcache_enable_at_startup = 1
+	let g:neocomplcache_enable_ignore_case = 1
+	let g:neocomplcache_enable_smart_case = 1
+	let g:neocomplcache_enable_fuzzy_completion = 1
+	let g:neocomplcache_fuzzy_completion_start_length = 1
+	let g:neocomplcache_enable_auto_select = 1
+end
 
 """ Colors
 set background=dark
