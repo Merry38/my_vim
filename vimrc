@@ -16,10 +16,11 @@ set cursorline
 set hlsearch
 set incsearch 
 
+set smartindent
 set shiftwidth=4
 set tabstop=4
-set softtabstop=4
-" set expandtab
+set expandtab
+" set softtabstop=4
 set foldmethod=syntax
 
 if has( 'unix' )
