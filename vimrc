@@ -16,6 +16,7 @@ set cursorline
 set hlsearch
 set incsearch 
 
+set expandtab
 set smartindent
 set shiftwidth=4
 set tabstop=4
@@ -50,7 +51,8 @@ noremap ;; :s///<Left><Left>
 noremap ;' :%s///g<Left><Left><Left>
 
 """ Plug-ins
-let mapleader="]"
+" let mapleader="]"
+let mapleader="ù"
 
 "" Eclim
 " Force eclim plugin to execute early for checks
@@ -70,7 +72,7 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType")
 
 "" Doxygen
 let g:load_doxygen_syntax = 1
-let g:DoxygenToolkit_authorName = "Riccardo Orizio"
+let g:DoxygenToolkit_authorName = "Mattia Rizzini"
 
 "" Syntastic
 nmap <leader>s :SyntasticCheck<CR>
