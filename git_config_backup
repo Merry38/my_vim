@@ -1,0 +1,37 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = https://Merry38@github.com/Merry38/my_vim
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "bundle/CamelCaseMotion"]
+	url = https://github.com/bkad/CamelCaseMotion.git
+[submodule "bundle/DoxygenToolkit"]
+	url = https://github.com/Denaun/DoxygenToolkit.vim.git
+[submodule "bundle/command-t"]
+	url = https://github.com/wincent/Command-T
+[submodule "bundle/molokai"]
+	url = https://github.com/Denaun/molokai.git
+[submodule "bundle/neocomplcache"]
+	url = https://github.com/Shougo/neocomplcache.vim.git
+[submodule "bundle/nerdtree"]
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/rainbow_parentheses"]
+	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "bundle/syntastic"]
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/tagbar"]
+	url = https://github.com/majutsushi/tagbar
+[submodule "bundle/vim-colors-solarized"]
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/vim-sensible"]
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "bundle/vim-sol"]
+	url = git@github.com:MORZorg/vim-sol.git
+[submodule "bundle/vim-surround"]
+	url = git://github.com/tpope/vim-surround.git
