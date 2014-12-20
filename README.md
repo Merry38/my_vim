@@ -1,6 +1,4 @@
-my_vim
+.vim
 ======
 
-My .vim folder
-
-Just clone in .vim and it works!
+Remember to *git submodule init* and *git submodule update*
