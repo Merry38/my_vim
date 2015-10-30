@@ -31,6 +31,8 @@ else
 endif
 
 syntax enable
+set background=dark
+colorscheme hybrid 
 filetype plugin indent on
 
 " Disable arrow keys for navigation
@@ -102,10 +104,6 @@ if !exists('g:EclimHome')
 	let g:neocomplcache_fuzzy_completion_start_length = 1
 	let g:neocomplcache_enable_auto_select = 1
 end
-
-""" Colors
-set background=dark
-colorscheme solarized
 
 """ Font
 if has( 'unix' )
