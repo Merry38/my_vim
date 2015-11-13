@@ -40,9 +40,9 @@
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim
-[submodule "bundle/vim-sol"]
-	path = bundle/vim-sol
-	url = git@github.com:MORZorg/vim-sol.git
+; [submodule "bundle/vim-sol"]
+; 	path = bundle/vim-sol
+; 	url = git@github.com:MORZorg/vim-sol.git
 [submodule "bundle/vim-hybrid"]
 	path = bundle/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid
