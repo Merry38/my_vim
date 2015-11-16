@@ -1,6 +1,6 @@
 [submodule "bundle/vim-sensible"]
 	path = bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -9,7 +9,7 @@
 	url = https://github.com/majutsushi/tagbar
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/DoxygenToolkit"]
 	path = bundle/DoxygenToolkit
 	url = https://github.com/Denaun/DoxygenToolkit.vim.git
@@ -40,9 +40,9 @@
 [submodule "bundle/rainbow_parentheses"]
 	path = bundle/rainbow_parentheses
 	url = https://github.com/kien/rainbow_parentheses.vim
-; [submodule "bundle/vim-sol"]
-; 	path = bundle/vim-sol
-; 	url = git@github.com:MORZorg/vim-sol.git
+[submodule "bundle/vim-sol"]
+	path = bundle/vim-sol
+	url = https://github.com/MORZorg/vim-sol.git
 [submodule "bundle/vim-hybrid"]
 	path = bundle/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid
